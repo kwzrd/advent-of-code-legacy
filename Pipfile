@@ -6,6 +6,9 @@ name = "pypi"
 [packages]
 
 [dev-packages]
+flake8 = "~=3.8.4"
+flake8-annotations = "~=2.4.1"
+flake8-import-order = "~=0.18.1"
 
 [requires]
 python_version = "3.8"
