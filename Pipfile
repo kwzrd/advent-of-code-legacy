@@ -12,3 +12,6 @@ flake8-import-order = "~=0.18.1"
 
 [requires]
 python_version = "3.8"
+
+[scripts]
+lint = "python -m flake8"
