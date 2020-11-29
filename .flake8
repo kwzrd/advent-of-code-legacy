@@ -1,0 +1,10 @@
+[flake8]
+max-line-length=100
+statistics=True
+import-order-style=pycharm
+application_import_names=aoc
+ignore=
+    # Missing annotations for self, cls, *args, **kwargs
+    ANN101,ANN102,ANN002,ANN003,
+    # Linebreak before binary operator (contradicts W504)
+    W503,
