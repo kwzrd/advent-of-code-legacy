@@ -1,4 +1,5 @@
 import importlib
+import json
 import logging
 import sys
 import typing as t
@@ -6,26 +7,22 @@ from datetime import datetime
 from pathlib import Path
 from types import ModuleType
 
-PROJECT_ROOT = Path(__file__).parents[1]
-
-INPUTS = Path(PROJECT_ROOT, "aoc", "inputs")
-SOLUTIONS = Path(PROJECT_ROOT, "aoc", "solutions")
+INPUTS = Path("aoc", "inputs.json")
+SOLUTIONS = Path("aoc", "solutions")
 
 log = logging.getLogger(__name__)
 
 
 def get_data(name: str) -> t.Optional[str]:
     """
-    Read input data based on `name`.
+    Read input data from `INPUTS` based on `name`.
 
-    None if `name` not found in the `INPUTS` directory.
+    None if `name` isn't present in the `INPUTS` file.
     """
-    path = Path(INPUTS, name)
+    with INPUTS.open(mode="r", encoding="UTF-8") as inputs:
+        all_data: t.Dict[str, str] = json.load(inputs)
 
-    if path.is_file():
-        return path.read_text(encoding="UTF-8")
-    else:
-        log.error(f"Input data not found for day: {name!r}")
+    return all_data.get(name)
 
 
 def get_module(name: str) -> t.Optional[ModuleType]:
