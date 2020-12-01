@@ -75,11 +75,11 @@ def main() -> None:
     qualified_name = f"day_{day_number:0>2}"
 
     if (data := get_data(qualified_name)) is None:
-        log.error("Failed to get data")
+        log.error(f"Failed to get input data for: {qualified_name!r}")
         return
 
     if (module := get_module(qualified_name)) is None:
-        log.error("Failed to get solution module")
+        log.error(f"Failed to get solution module for: {qualified_name!r}")
         return
 
     start_time = datetime.utcnow()
