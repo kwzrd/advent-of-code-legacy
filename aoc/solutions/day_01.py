@@ -1,3 +1,5 @@
+# Reference: https://adventofcode.com/2020/day/1
+
 import itertools
 import math
 import typing as t
