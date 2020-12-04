@@ -1,5 +1,5 @@
 [flake8]
-max-line-length=100
+max-line-length=110
 statistics=True
 import-order-style=pycharm
 application_import_names=aoc
