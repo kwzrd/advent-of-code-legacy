@@ -8,7 +8,6 @@ from pathlib import Path
 from types import ModuleType
 
 INPUTS = Path("aoc", "inputs.json")
-SOLUTIONS = Path("aoc", "solutions")
 
 log = logging.getLogger(__name__)
 
