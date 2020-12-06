@@ -10,7 +10,9 @@ Use Pipenv to reproduce the Python environment:
 pipenv sync
 ```
 
-And then run solutions for a specific day:
+Then run solutions for a specific day:
 ```
 pipenv run day 1
 ```
+
+This will load input data from [inputs.json](aoc/inputs.json) and pass it to the solution.
