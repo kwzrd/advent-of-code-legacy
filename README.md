@@ -1,5 +1,5 @@
 ![Pipenv-Python](https://img.shields.io/github/pipenv/locked/python-version/kwzrd/advent-of-code?label=Python&style=flat-square)
-![Github-Workflow-Status](https://img.shields.io/github/workflow/status/kwzrd/advent-of-code/Flake8%20&%20friends/master?label=Flake8%20%26%20friends&style=flat-square)
+![Github-Workflow-Status](https://img.shields.io/github/workflow/status/kwzrd/advent-of-code/Flake8%20&%20friends/main?label=Flake8%20%26%20friends&style=flat-square)
 
 # Advent of Code
 
