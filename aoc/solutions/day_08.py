@@ -9,6 +9,7 @@ Program = t.List[Instruction]
 def execute(program: Program) -> t.Tuple[bool, int]:
     """
     Execute `program` returning final accumulator state.
+
     First return value determines whether the program halted normally.
     """
     visited_states = set()
